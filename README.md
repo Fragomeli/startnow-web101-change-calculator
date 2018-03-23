@@ -1,0 +1,1 @@
+This is a simple change calculator using HTML, CSS, and JavaScript for Fuctionality

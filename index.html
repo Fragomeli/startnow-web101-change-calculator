@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Change Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,">
+    <!-- BULMA  CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/favicon.png" />
+  </head>
+  <!---HERO-------------------------------------------------->
+  <body>
+    <section class= "hero is-danger">
+      <div class= "hero-body">
+          <div class="container">
+            <h1 class="title is-1">Change Calculator</h1>
+            <h2 class="subtitle">change is coming.</h2>
+           </div>
+      </div>
+     </section>   
+     
+  <!---COLUMNS------------------------------------------------>   
+    <div class= "columns" >
+        <div class= "column">
+          <div class= "card">
+            <div class= "card-content">
+              <h2 class= "title">Amount of Sale Due</h2>
+              <h3 class= "subtitle">This is how much you owe.</h3>
+              <input id="amount-due" class="is-success input is-medium" name="amount-due" type="text" placeholder ="enter amount here without dollar sign" value=""/>
+            </div>
+            <footer class= "card-footer">
+              <div class= "card-footer-item">
+                <i class="fas fa-dollar-sign sucess"></i>
+              </div>
+            </footer>
+          </div>
+        </div>
+    </div>
+  <!--  <div class="column">
+        <div class= "column">
+            <div class= "card">
+              <div class= "card-content">
+                <h2 class= "title">Amount of Sale Due</h2>
+                <h3 class= "subtitle">This is how much you owe.</h3>
+                <input id="amount-due" class="is-success input is-medium" name="amount-due" type="text" placeholder ="enter amount here without dollar sign" value=""/>
+              </div>
+              <footer class= "card-footer">
+                <div class= "card-footer-item">
+                  <i class="fas fa-dollar-sign sucess"></i>
+                </div>
+              </footer>
+            </div>
+          </div>
+    </div>
+    <div class="column">
+        <div class= "column">
+            <div class= "card">
+              <div class= "card-content">
+                <h2 class= "title">Amount of Sale Due</h2>
+                <h3 class= "subtitle">This is how much you owe.</h3>
+                <input id="amount-due" class="is-success input is-medium" name="amount-due" type="text" placeholder ="enter amount here without dollar sign" value=""/>
+              </div>
+              <footer class= "card-footer">
+                <div class= "card-footer-item">
+                  <i class="fas fa-dollar-sign sucess"></i>
+                </div>
+              </footer>
+            </div>
+          </div>
+    </div> -->
+       <main id="root">
+          <div class="form-group">
+          <form>
+            Amount of Sale Due: <input id="amount-due" type="number" step="0.01" name="amount-due">
+            Amount Received: <input id="amount-received" type="text" name="amount-received"><br>
+            <hr class="mb-4">
+            <button id="calculate-change" type="button" class="btn btn-success btn-lg btn-block text-white">CALCULATE CHANGE DUE</button>
+            <hr class="mb-4">
+          </form>
+          <div class="form-group">
+            <form id="output-box"> 
+            <p id="dollars-output" class="dollars" type="text" name="dollars" placeholder="dollars">Dollars</p>
+            <p id="quarters-output" class="quarters" type="text" name="quarters" placeholder="quarters">Quarters</p>
+            <p id="dimes-output"  class="dimes" type="text" name="dimes" placeholder="dimes">Dimes</p>
+            <p id="nickels-output" class="nickels" type="text" name="nickels" placeholder="nickles">Nickels</p>
+            <p id="pennies-output"  class="pennies" type="text" name="pennies" placeholder="pennies">Pennies</p>
+          </form>
+          </div>
+        </div>
+          <div class="form-group">
+            
+          </div>
+        </main>
+        <aside>[Aside content goes here]</aside>
+        <footer>[Footer content goes here]</footer>
+      </div>
+
+   
+    
+    <!-- Don't forget to add your <script> tag here -->
+    <!-- Optional JavaScript -->  
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
